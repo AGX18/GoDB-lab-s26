@@ -160,7 +160,7 @@ necessary columns to minimize memory usage, but doing so is quite tedious for ed
   a specific key, then fetch the actual tuples from the `TableHeap` using those RIDs.
 
 **Test:**
-Run `go test -v ./execution -run IndexExecutor`
+Run `go test -v ./execution -run IndexExecutor` (NOTE: run this test only after you finish Modifications)
 
 ### 2. Modifications
 **Crucially, you must maintain index consistency.**
@@ -176,6 +176,7 @@ NOTE: Insert, Delete, Update executors follow standard SQL semantics. These exec
 
 **Test:**
 Run `go test -v ./execution -run ModificationExecutor`
+
 
 
 ---
